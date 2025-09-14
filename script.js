@@ -2,7 +2,6 @@
 document.querySelectorAll('.post-card .btn').forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        alert('Este é um link de exemplo. Adicione o URL do post aqui!');
     });
 });
 
