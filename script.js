@@ -2,6 +2,10 @@
 document.querySelectorAll('.post-card .btn').forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
+        const url= button.getAttribute('data-url');
+        if (url) {
+        window.location.href= url;
+            }
     });
 });
 
