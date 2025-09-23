@@ -1,11 +1,17 @@
 // Adiciona interatividade básica (exemplo: alerta ao clicar em um post)
-document.querySelectorAll('.post-card .btn').forEach(button => {
+document.querySelectorAll('.post-card .btn').forEach(button,index => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        const url= button.getAttribute('data-url');
-        if (url) {
-        window.location.href= url;
-            }
+        if (index === 0) {
+        window.location.href= 'IA.html';
+        } else if (index === 1) {
+        window.location.href= 'RV.html';
+        } else if (index === 2) {
+        window.location.href= 'secure.html';
+        } else if (index === 3) {
+        window.location.href= '5G.html';
+        } else if (index === 4) {
+        window.location.href= 'Visão.html';
     });
 });
 
