@@ -1,5 +1,5 @@
 // Adiciona interatividade básica (exemplo: alerta ao clicar em um post)
-document.querySelectorAll('.post-card .btn').forEach(button,index => {
+document.querySelectorAll('.post-card .btn').forEach((button,index)=> {
     button.addEventListener('click', (e) => {
         e.preventDefault();
         if (index === 0) {
